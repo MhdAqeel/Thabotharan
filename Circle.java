@@ -21,4 +21,15 @@ public class Circle{
 	public double getRadius(){return radius;}
 	public String getColour(){return colour;}
 	public double getArea(){return radius*radius*Math.PI;}
+
+	public void setRadius(double radius){
+		this.radius=radius;
+	}
+	public void setColour(String colour){
+		this.colour=colour;
+	}
+
+	public String toString(){
+		return "The radius of circle is : "+this.getRadius()+"\nColour of the circle is : "+this.getColour();
+	}
 }
