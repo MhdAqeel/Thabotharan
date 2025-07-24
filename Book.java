@@ -17,6 +17,10 @@ public class Book{
 		return this.pages;
 	}
 	
+	public Author getAuthor(){
+		return this.author;
+	}
+	
 	public void setTitle(String title){
 		this.title=title;
 	}

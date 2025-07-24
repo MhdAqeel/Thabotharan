@@ -10,5 +10,9 @@ public class TestCircle{
 		System.out.println();
 		System.out.println(myCircle.toString());
 		System.out.println();
+
+		c1.setColour("green");
+		System.out.println(c1.toString());
+		System.out.println();
 	}
 }
