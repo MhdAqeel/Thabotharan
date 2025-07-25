@@ -36,11 +36,11 @@ public class Line{
 	public int[] getEndXY(){
 		return new int[] {this.getEndX(),this.getEndY()};
 	}
+		
+	//setters
 	public void setBegin(Point begin){
 		this.begin = begin;
 	}
-	
-	//setters
 	public void setEnd(Point end){
 		this.end=end;
 	}	
@@ -50,14 +50,14 @@ public class Line{
 	public void setBeginY(int y){
 		this.begin.setY(y);
 	}	
-	public void setBeginXY(int x , int y){
-		this.begin = new Point(x,y);
-	}
 	public void setEndX(int x){
 		this.end.setX(x);
 	}
 	public void setEndY(int y){
 		this.end.setY(y);
+	}
+	public void setBeginXY(int x , int y){
+		this.begin = new Point(x,y);
 	}
 	public void setEndXY(int x , int y){
 		this.end = new Point(x,y);
