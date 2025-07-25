@@ -33,7 +33,37 @@ public class Line{
 		return this.getBegin().getY();
 	}
 	public void setBeginY(int y){
+		this.begin.setY(y);
+	}
+	public int[] getBeginXY(){
+		return new int[] {this.getBeginX(),this.getBeginY()};
+	}
+	public void setBeginXY(int x , int y){
+		this.begin = new Point(x,y);
+	}
+	public int getEndX(){
+		return this.getEnd().getX();
+	}
+	public void setEndX(int x){
+		this.end.setX(x);
+	}
+	public int getEndY(){
+		return this.getEnd().getY();
+	}
+	public void setEndY(int y){
 		this.end.setY(y);
 	}
-	
+	public int[] getEndXY(){
+		return new int[] {this.getEndX(),this.getEndY()};
+	}
+	public void setEndXY(int x , int y){
+		this.end = new Point(x,y);
+	}
+	public String toString(){
+		return"Line [ Begin = ( "+ this.getBeginX() +" , "+ this.getBeginY() +" ) , End = ( "+ this.getEndX() +" , "+ this.getEndY() +" ) ] ";
+	}
+	public double getLength(){
+		return this.getBegin().distance(this.getEnd());
+	}
+
 }
