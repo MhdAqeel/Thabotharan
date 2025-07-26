@@ -24,6 +24,10 @@ public class Book{
 	public void setTitle(String title){
 		this.title=title;
 	}
+
+	public void setPage(int pages){
+		this.pages=pages;
+	}
 	
 	public String toString(){
 		return "Name of the book : "+this.getTitle()+"\nAuthor of the book : "+author.toString()+"\nNumber of pages in the book : "+this.getPages();
