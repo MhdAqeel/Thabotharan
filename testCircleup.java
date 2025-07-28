@@ -1,9 +1,9 @@
-public class TestCircle{
+public class testCircleup{
 	public static void main (String [] args){
-		Circle c1 = new Circle ();
-		Circle c2 = new Circle(2.0);
-		Circle myCircle = new Circle(3.97,"Green");
-		Circle youCircle = new Circle(3.97,"Green",2,3);
+		Point p1 = new Point(2,3);
+		Circleup c1 = new Circleup ();
+		Circleup c2 = new Circleup(2.0,"yellow",9,10);
+		Circleup myCircle = new Circleup (5.0,"purple",p1);
 		
 		System.out.println(c1.toString());
 		System.out.println();
