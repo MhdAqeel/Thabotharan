@@ -30,6 +30,6 @@ public class Circle{
 	}
 
 	public String toString(){
-		return "    The radius of circle is : "+this.getRadius()+"\n    Colour of the circle is : "+this.getColour();
+		return "Radius of the circle is : "+this.getRadius()+"\nColour of the circle is : "+this.getColour();
 	}
 }
