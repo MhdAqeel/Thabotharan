@@ -6,6 +6,8 @@ public class TestCylinder{
 		Cylinder c1 = new Cylinder();
 		
 		System.out.println("=======MY CYLINDER======== \n"+myc.toString());
+		System.out.println();
+		System.out.println();
 		System.out.println("=======MY CYLINDER======== \n"+c1.toString());
 	}
 }

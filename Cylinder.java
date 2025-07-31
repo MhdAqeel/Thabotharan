@@ -1,11 +1,11 @@
-public class Cylinder{
+public class Cylinder extends Circle{
 	private Circle top;
-	private int height;
+	private double height;
 	private Circle bottom;
 
-	public final int DEFULT_HEIGHT = 20;
+	public final double DEFULT_HEIGHT = 20.0;
 	
-	public Cylinder(Circle top,int height, Circle bottom){
+	public Cylinder(Circle top,double height, Circle bottom){
 		this.top=top;
 		this.height=height;
 		this.bottom = bottom;
@@ -15,6 +15,16 @@ public class Cylinder{
 		this.height = DEFULT_HEIGHT;
 		this.bottom = new Circle();
 	}
+	public Cylinder(double height, double radius){
+		this.top = new Circle (radius);
+		this.height = height;
+		this.bottom = new Circle (radius);
+	}
+	public Cylinder(double height, double radius, String color){
+		this.top = new Circle (radius, color);
+		this.height = height;
+		this.bottom = new Circle (radius , color);
+	}
 	
 	public Circle getTop(){
 		return this.top;
@@ -22,7 +32,7 @@ public class Cylinder{
 	public Circle getBottom(){
 		return this.bottom;
 	}
-	public int getHeight(){
+	public double getHeight(){
 		return this.height;
 	}
 	
