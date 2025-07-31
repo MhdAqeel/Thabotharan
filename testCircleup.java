@@ -15,5 +15,7 @@ public class testCircleup{
 		c1.setColour("green");
 		System.out.println(c1.toString());
 		System.out.println();
+		
+		System.out.println(c1.getX());
 	}
 }

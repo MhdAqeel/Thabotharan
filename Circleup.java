@@ -32,7 +32,8 @@ public class Circleup{
 	public String getColour(){return colour;}
 	public Point getCenter(){return this.center;}
 	public double getArea(){return radius*radius*Math.PI;}
-	
+	public int getX(){return this.center.getX();}
+	public int getY(){return this.center.getY();}
 	
 
 	public void setRadius(double radius){
@@ -40,6 +41,10 @@ public class Circleup{
 	}
 	public void setColour(String colour){
 		this.colour=colour;
+	}
+	public void setCenter(int x,int y)
+	{
+		this.center=new Point (x,y);
 	}
 
 	public String toString(){
