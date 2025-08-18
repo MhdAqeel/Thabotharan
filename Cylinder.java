@@ -30,6 +30,11 @@ public class Cylinder extends Circle{
         return getArea() * height;  // area from Circle
     }
 	
+	@Override
+	public double getArea(){
+		return 2.0*Math.PI*getRadius()*height;
+	}
+	@Override
 	public String toString() {
         return super.toString() +  // Circle's toString (radius and colour)
                "\nHeight of the cylinder: " + height +
