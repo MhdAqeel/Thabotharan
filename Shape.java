@@ -4,12 +4,17 @@ public class Shape {
     public Shape(String color) {
         this.color = color;
     }
+
+    public Shape(){
+        this.color="White";
+    }
     
     public String getColor() {
         return this.color;
     }
     
     public double getArea() {
+        System.out.println("Aw snap! my Area is not defined");
         return 0.0;
     }
     
