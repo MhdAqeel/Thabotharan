@@ -1,1 +1,1 @@
-<img src="Screen Recording 2025-08-30 134149.gif" alt="Alt text" width="400">
+<img src="Screen Recording 2025-08-30 134149.gif" alt="Alt text" >
