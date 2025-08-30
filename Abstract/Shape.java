@@ -1,4 +1,4 @@
-public class Shape {
+public abstract class Shape {
     private String color;
     
     public Shape(String color) {
@@ -13,11 +13,12 @@ public class Shape {
         return this.color;
     }
     
-    public double getArea() {
-        System.out.println("Aw snap! my Area is not defined");
-        return 0.0;
+    public void setColor(String color){
+        this.color = color;
     }
     
+    public abstract double getArea();
+      
     public String toString() {
         return "Color = " + this.getColor() + "\nArea = " + this.getArea();
     }

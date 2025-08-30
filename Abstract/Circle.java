@@ -1,35 +1,32 @@
-public class Circle{
+public class Circle extends Shape{
 	private double radius;
-	private String colour;
 	
-	public final double DEFAULT_RADIUS=1.0;
-	public final String DEFAULT_COLOUR="red";
+	public static final double DEFAULT_RADIUS=1.0;
+	public static final String DEFAULT_COLOUR="red";
 	
 	public Circle(){
+		super(DEFAULT_COLOUR);
 		this.radius=DEFAULT_RADIUS;
-		this.colour=DEFAULT_COLOUR;
 	}
-	public Circle(double r){
-		radius=r;
-		colour=DEFAULT_COLOUR;
+	public Circle(double radius){
+		super(DEFAULT_COLOUR);
+		this.radius=radius;
 	}
-	public Circle(double r, String c){
-		radius = r;
-		colour = c;
+	public Circle(double radius, String color){
+		super(color);
+		this.radius = radius;
 	}
 	
 	public double getRadius(){return radius;}
-	public String getColour(){return colour;}
+	@Override
 	public double getArea(){return radius*radius*Math.PI;}
 
 	public void setRadius(double radius){
 		this.radius=radius;
 	}
-	public void setColour(String colour){
-		this.colour=colour;
-	}
 
+	@Override
 	public String toString(){
-		return "Radius of the circle is : "+this.getRadius()+"\nColour of the circle is : "+this.getColour();
+		return "Radius of the circle is : "+this.getRadius()+"\nColour of the circle is : "+this.getColor();
 	}
 }
