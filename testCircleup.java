@@ -17,5 +17,14 @@ public class testCircleup{
 		System.out.println();
 		
 		System.out.println(c1.getX());
+
+
+		System.out.println();
+		if (c1 instanceof Circleup){
+			System.out.println("yes it is");
+		}
+
+		System.out.println(c1 instanceof Circleup);
+		//System.out.println(c1 instanceof Point);
 	}
 }
