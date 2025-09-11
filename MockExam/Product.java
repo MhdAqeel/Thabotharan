@@ -19,6 +19,6 @@ public abstract class Product {
     public abstract String prepNote();
 
     public String toString() {
-        return "Name = " + getName() + "\nPrice = " + price();
-    }
+        return String.format("Name = %s\nPrice = %.2f", getName(), price());
+}
 }

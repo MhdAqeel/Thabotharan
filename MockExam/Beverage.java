@@ -32,7 +32,7 @@ public class Beverage extends Product {
     }
 
     @Override
-    public void prepNote() {
-        System.out.println("Beverage preparation: Size - " + size + ", Iced - " + iced);
+    public String prepNote() {
+        return
     }
 }

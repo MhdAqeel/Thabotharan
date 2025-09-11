@@ -8,11 +8,11 @@ public class Pastry extends Product {
         this.warmed = warmed;
     }
 
-    public Pastry(boolean glutenFree, boolean warmed){
+    // public Pastry(boolean glutenFree, boolean warmed){
         
-        this.glutenFree= glutenFree;
-        this.warmed = warmed ;
-    }
+    //     this.glutenFree= glutenFree;
+    //     this.warmed = warmed ;
+    // }
 
     @Override
     public double price() {
@@ -23,12 +23,15 @@ public class Pastry extends Product {
     }
 
     @Override
-    public String prepNote (boolean glutenFree , boolean warmed) {
-        
+    public String prepNote () {
+        return String.format("%s - %s , %s", 
+                getName(),
+                glutenFree ? "gluten-free" : "regular",
+                warmed? "warm slightly" : "no warming ");
     }
 
     @Override
     public String toString() {
-        return "Name - " + super.getName() + "\nPrice = " + this.price();
-    }
+        return String.format("Name = %s\nPrice = %.2f", getName(), price());
+}
 }
