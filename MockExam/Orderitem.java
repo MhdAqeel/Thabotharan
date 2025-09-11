@@ -19,7 +19,6 @@ public class OrderItem {
         return product.price() * quantity;
     }
     public String kitchenLine (){
-        //polimorphic call to prepote ()
-        return String.format("%d %s -> %s",quantity,product,product.getName(),product.prepNote());
+    return String.format("%d x %s -> %s", quantity, product.getName(), product.prepNote());
     }
 }

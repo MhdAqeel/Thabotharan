@@ -12,11 +12,16 @@ public class Order {
     public void addItem(Product p, int qty){
         items.add(new OrderItem(p, qty));
     }
+    
     public double subtotal(){
-        return items.stream().mapToDouble(OrderItem::lineTotal).sum();
+        double total = 0.0;
+        for (OrderItem item : items) {
+            total += item.lineTotal();
+        }
+        return total;
     }
-    public double discount()
-    {
+    
+    public double discount() {
         return subtotal() * customer.getCard().discountRate();
     }
 
@@ -31,7 +36,7 @@ public class Order {
         for (OrderItem item : items){
             Product p = item.getProduct();
             double line = item.lineTotal();
-            System.out.printf("%-20s %2d x %6.2f = %6.2f\n", p.getName(), item.getQuantity(), p.price(), line);
+            System.out.printf("%-25s %2d x %6.2f = %6.2f\n", p.getName(), item.getQuantity(), p.price(), line);
         }
         System.out.println("------------------------------");
         System.out.printf("Subtotal : %7.2f\n", subtotal());
