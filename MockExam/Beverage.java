@@ -33,6 +33,6 @@ public class Beverage extends Product {
 
     @Override
     public String prepNote() {
-        return
+        return super.toString() + " - " + size + (iced ? " (Iced)" : " (Hot)");
     }
 }

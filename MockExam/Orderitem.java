@@ -11,7 +11,7 @@ public class OrderItem {
     public Product getProduct(){
         return product;
     }
-    public int grtQuantity(){
+    public int getQuantity(){
         return quantity;
     }
 
@@ -20,6 +20,6 @@ public class OrderItem {
     }
     public String kitchenLine (){
         //polimorphic call to prepote ()
-        return String.format("%d %s -> %s",quantity,product,getName(),product.prepNote());
+        return String.format("%d %s -> %s",quantity,product,product.getName(),product.prepNote());
     }
 }
