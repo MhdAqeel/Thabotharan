@@ -14,5 +14,11 @@ public class Test {
 		cash.pay(2500.0);
 		System.out.println("Available balnce is : "+cash.getBalence());
 		
+		System.out.println();
+		// test for cash
+		CashPayment cash01 = new CashPayment();
+		System.out.println("Available balnce is : "+cash01.getBalence());
+		cash01.pay(26500.0);
+		System.out.println("Available balnce is : "+cash01.getBalence());
 	}
 }
