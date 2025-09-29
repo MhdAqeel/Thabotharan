@@ -1,6 +1,6 @@
 import java.util.*;
 public class Department{
-    list <Employee> employees = new ArrayList<>();
+    ArrayList <Employee> employees = new ArrayList<>();
 
     public  void addEmployee(Employee e){
         employees.add(e);
