@@ -11,9 +11,10 @@ public class Doctor extends Person implements Schedulable {
         surgeryType = surgen;
     }
 
-    public String schedule (String date){
-        this.date=date;
-    } 
+    public String schedule(String date) {
+        this.date = date;
+        return "Scheduled for " + date;
+    }
 
     @Override
     public void dispalyInfo(){

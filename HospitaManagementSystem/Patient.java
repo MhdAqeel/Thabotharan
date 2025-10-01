@@ -5,8 +5,9 @@ public class Patient extends Person implements Schedulable,Payable{
         super(name, age, id);
     }
 
-    public String schedule (String date){
-        this.date=date;
+    public String schedule(String date) {
+        this.date = date;
+        return "Scheduled for " + date;
     }
     
     public void generateBill(double amount){
