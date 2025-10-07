@@ -12,6 +12,7 @@ public class Patient extends Person implements Schedulable,Payable{
     
     public void generateBill(double amount){
         System.out.println("------Invoice-------"+
+        "\n patient's name : "+ name +
         "\n Amount : " + amount);
     }  
 
