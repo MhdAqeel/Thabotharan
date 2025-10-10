@@ -1,5 +1,5 @@
-public class StudntMember{
-    public StudntMember (String name){
+public class StudentMember extends Member{
+    public StudentMember (String name){
         super(name);
     }
 }
