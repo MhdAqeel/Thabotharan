@@ -10,7 +10,7 @@ public class Line{
 		this.begin = begin;
 		this.end = end;		
 	}
-	
+	//hi my name is aqqel
 	//getters
 	public Point getBegin(){
 		return this.begin;
