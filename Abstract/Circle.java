@@ -34,4 +34,6 @@ public class Circle extends Shape{
 	public String toString(){
 		return "Radius of the circle is : "+this.getRadius()+"\nColour of the circle is : "+this.getColor();
 	}
+
+	//this just a comment
 }
