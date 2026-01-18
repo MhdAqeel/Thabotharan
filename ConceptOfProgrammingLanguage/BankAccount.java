@@ -1,4 +1,4 @@
-public class BankAccount{
+public abstract class BankAccount{
 	private String AccountId;
 	private String AccountHolderName;
 	private CustomerType customerType;
@@ -39,7 +39,7 @@ public class BankAccount{
         if (amount > 0 && amount <= balance) {
             this.balance -= amount;
             targetAccount.deposit(amount);
-            System.out.println("Transferred " + amount + " to account ID: " + targetAccount.accountID);
+            System.out.println("Transferred " + amount + " to account ID: " + targetAccount.AccountId);
         } else {
             System.out.println("Transfer failed: Insufficient balance or invalid amount.");
         }
@@ -68,12 +68,9 @@ public class BankAccount{
     abstract void calculateInterest();
 }
 
-
-
-public enum CustomerType {
-	PERSONAL,
-	GROUP,
-	COMPANY
+enum CustomerType {
+    PERSONAL,
+    GROUP,
+    COMPANY
 }
-
 
